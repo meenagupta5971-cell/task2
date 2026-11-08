@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 2 - My Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<div class="logo">My Website</div>
+<div class="links">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+
+<div class="grid-box">
+<div class="card">
+<h2>Contact Form</h2>
+<p id="error"></p>
+<input type="text" id="name" placeholder="Your Name">
+<input type="email" id="email" placeholder="Your Email">
+<textarea id="message" placeholder="Your Message"></textarea>
+<button onclick="checkForm()">Submit</button>
+<p id="success"></p>
+</div>
+
+<div class="card">
+<h2>My To-Do List</h2>
+<input type="text" id="taskInput" placeholder="Add new task">
+<button onclick="addTask()">Add Task</button>
+<ul id="taskList"></ul>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
